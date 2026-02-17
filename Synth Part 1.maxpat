@@ -39,7 +39,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 264.0, 820.0, 150.0, 47.0 ],
+                    "patching_rect": [ 264.0, 820.0, 151.0, 47.0 ],
                     "text": "each of these gates are to switch which type of wave is playing"
                 }
             },
@@ -111,10 +111,10 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 153.74998533725739, 142.499986410141, 111.0, 22.0 ],
                     "saved_object_attributes": {
-                        "client_rect": [ 4, 44, 358, 172 ],
+                        "client_rect": [ 100, 167, 483, 529 ],
                         "parameter_enable": 0,
                         "parameter_mappable": 0,
-                        "storage_rect": [ 100, 167, 551, 295 ]
+                        "storage_rect": [ 583, 69, 1034, 197 ]
                     },
                     "text": "pattrstorage mixing",
                     "varname": "mixing"
@@ -429,19 +429,8 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 438.0, 1205.0, 80.0, 22.0 ],
+                    "patching_rect": [ 376.0, 1209.0908024311066, 80.0, 22.0 ],
                     "text": "send~ wave3"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-51",
-                    "maxclass": "number",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "", "bang" ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 459.0, 1206.0, 50.0, 22.0 ]
                 }
             },
             {
@@ -544,7 +533,8 @@
             },
             {
                 "box": {
-                    "decay_time": 5037.637144223376,
+                    "attack_time": 600.0,
+                    "decay_time": 100.0,
                     "final": 0.17880794603172856,
                     "id": "obj-21",
                     "maxclass": "live.adsrui",
@@ -555,8 +545,8 @@
                     "peak": 0.8807947026455141,
                     "presentation": 1,
                     "presentation_rect": [ 438.0, 416.0, 298.34803325060767, 100.66666722297668 ],
-                    "release_time": 2012.1747875295691,
-                    "sustain": 0.4172185407407002,
+                    "release_time": 1000.0,
+                    "sustain": 0.5,
                     "varname": "live-adsr"
                 }
             },
@@ -2066,6 +2056,14 @@
             "obj-23": [ "number[6]", "number[2]", 0 ],
             "obj-31": [ "number[7]", "number[2]", 0 ],
             "obj-32": [ "number[8]", "number[2]", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "inherited_shortname": 1
         },
         "autosave": 0
